@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>하이퍼링크 태그</h1>
+<h3>a</h3>
+<hr>
+
+<!-- href 속성(Attribute)이 있어야 하이퍼링크로 동작한다 -->
+<a>링크</a>
+<br><br>
+
+
+<hr>
+
+<div id="top">
+	<h1>여기가 TOP!!</h1>
+</div>
+
+<a href="#bottom">BOTTOM 으로 가기</a>
+
+<hr>
+
+
+<!-- href 속성이 ""로 비어있으면 현재 페이지를 다시 요청한다 -->
+<a href>href속성 적용한 a태그</a>
+<a href="">href속성 적용한 a태그</a>
+
+<hr>
+
+<a href="https://www.google.co.kr/">구글로 이동</a><br><br>
+
+<a href="https://www.google.co.kr/" target="_blank">구글로 이동 (새 탭)</a><br><br>
+
+<a href="https://www.google.co.kr/" target="_self">구글로 이동 (현재 탭)</a>
+
+<hr>
+
+<!-- 절대 경로 URL -->
+<!-- 	Absolute URL -->
+<!-- 	도메인주소를 포함한 전체 URL을 뜻한다 -->
+
+<!-- 	다른 사이트로 하이퍼링크를 적용할 때 사용한다 -->
+
+<a href="https://www.naver.com/" target="_blank">네이버</a><br>
+
+<a href="https://www.kh-academy.co.kr/community/notice.kh" target="_blank">KH 이야기</a>
+
+<hr>
+
+<!-- 상대 경로 URL -->
+<!-- 	Relative URL -->
+
+<!-- 	도메인 주소를 생략하고 자원(파일)의 경로만 적은 URL -->
+
+<!-- 	같은 사이트 내에서 다른 페이지로 이동할 때 사용한다 -->
+<!-- 	사이트 기준점이 현재 보고있는 사이트가 된다 -->
+
+<!-- 	메뉴를 구성할 때 사용할 수 있다 -->
+
+<ul>
+	<li><a href="/tag/tag_01.html">하나</a></li>
+	
+	<li><a href="tag_02.html">둘</a></li>
+	
+	<!-- 404 에러, 페이지 없음 -->
+	<li><a href="../abc">셋</a></li>
+	
+	<li><a href="../test.html">넷</a></li>
+	
+	<li><a href="./tag_03.html">다섯</a></li>
+
+<!-- ./ -->
+<!-- 	보고있는 페이지의 현재 디렉토리 -->
+<!-- 	디렉토리 지정문자 없이 바로 자원(파일) 이름으로 사용 가능 -->
+
+<!-- ../ -->
+<!-- 	보고있는 페이지의 부모 디렉토리 -->
+
+<!-- / -->
+<!-- 	보고있는 페이지의 루트 디렉토리 -->
+
+</ul>
+
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis urna nec nisi dapibus commodo eu ut erat. Nam in nulla magna. Pellentesque pretium sagittis neque. Mauris quis arcu nec arcu cursus pretium sed viverra urna. Nulla eget gravida mi, at tristique quam. Curabitur elit dolor, molestie vel varius id, ultricies ultricies eros. Phasellus lacinia metus eget facilisis pharetra. Sed nec ante fermentum, vulputate turpis a, elementum massa. Aliquam vel felis suscipit velit accumsan mattis. Nullam facilisis hendrerit tellus id congue. Morbi eu nulla rutrum, consequat erat sit amet, tincidunt nulla. Nunc at vulputate arcu. Phasellus efficitur arcu in velit auctor, eu vestibulum mi maximus.</p>
+
+<p>Donec nec nisi eget nulla bibendum fringilla iaculis vitae elit. Integer aliquet velit mauris, non volutpat risus rhoncus scelerisque. Vestibulum et turpis volutpat, blandit odio et, gravida turpis. Phasellus efficitur dapibus massa vitae elementum. Pellentesque dictum purus dapibus tellus tincidunt, et gravida magna feugiat. Nam ac ex quis eros congue dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+<p>Duis vitae luctus libero. Nullam fermentum mauris eu scelerisque pulvinar. Aenean in volutpat nisl, quis pellentesque massa. Duis varius molestie viverra. Quisque eu magna eget purus ultricies vestibulum. Quisque a vestibulum velit. Donec a placerat felis, sed hendrerit magna. Pellentesque varius ex non est molestie, non tincidunt velit dignissim. Nullam gravida, enim non cursus sagittis, neque diam lacinia enim, eget vulputate risus est quis arcu. Aenean varius mattis dui, varius ultrices urna imperdiet vel. Vivamus nulla odio, sagittis quis posuere vehicula, sollicitudin sed felis.</p>
+
+<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum iaculis pharetra varius. Nullam accumsan placerat nisi at varius. Nam consectetur diam ac urna commodo, id tempor lectus placerat. Etiam fringilla magna dapibus urna ultrices imperdiet. In ac tempus justo, nec condimentum magna. Curabitur aliquet arcu sit amet feugiat molestie. Praesent lectus nunc, ultrices non maximus quis, pretium eget elit. Aliquam laoreet magna nunc, sit amet sagittis libero gravida eget. Quisque ac suscipit nulla, eu pellentesque neque. Integer nec tortor sed lorem porttitor posuere. Sed pretium mi auctor ligula aliquam, a sollicitudin lorem pretium. Suspendisse mollis interdum massa, in egestas erat pretium at. Integer et elementum metus, ac tincidunt ligula. Nam ac facilisis risus.</p>
+
+<p>Vivamus molestie rutrum lectus, bibendum imperdiet justo. Nullam malesuada venenatis bibendum. Suspendisse potenti. Pellentesque et urna ut nunc pretium dictum sit amet eu ex. Sed finibus, turpis nec elementum sollicitudin, dolor enim laoreet elit, eu convallis massa turpis sed diam. Nunc placerat mauris vehicula augue varius laoreet. Vestibulum dignissim purus quis lobortis interdum. Aenean ut dictum nisl, ac luctus quam. Ut sodales rutrum felis, a lacinia nulla vestibulum eget.</p>
+
+<hr>
+
+<!-- id속성 -->
+<!-- 	해당 태그의 식별자(이름)를 붙여준다 -->
+
+<div id="bottom">
+	<h1>여기가 BOTTOM!</h1>
+</div>
+
+<a href="#top">TOP 으로 가기</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

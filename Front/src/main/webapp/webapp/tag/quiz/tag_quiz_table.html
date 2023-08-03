@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>태그 퀴즈</h1>
+<hr>
+
+<form action="" method="get">
+
+<fieldset style="width: 290px;">
+
+	<legend>인적사항</legend>
+
+	<table>
+	
+		<colgroup>
+			<col width="100px;">
+			<col>
+		</colgroup>
+	
+		<tr>
+			<td>
+				<label for="userid">아이디</label>
+			</td>
+			<td>
+				<input type="text" name="userid" id="userid" placeholder="아이디 입력">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="password">패스워드</label>
+			</td>
+			<td>
+				<input type="password" name="password" id="password">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="email">이메일</label>
+			</td>
+			<td>
+				<input type="email" name="email" id="email">
+			<td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label>성별</label>
+			</td>
+			<td>
+				<label style="width: 50px;"><input type="radio" name="gender" id="m">남</label>
+				<label style="width: 50px;"><input type="radio" name="gender" id="F">여</label>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="married">결혼여부</label>
+			</td>
+			<td>
+				<input type="checkbox" name="married" id="married">
+			<td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="location">지역</label>
+			</td>
+			<td>
+				<input list="loc" name="location" id="location">
+				<datalist id="loc">
+					<option value="seoul">서울</option>
+					<option value="gyeonggi">경기</option>
+					<option value="jeolla">전라</option>
+					<option value="gyeongsang">경상</option>
+				</datalist>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<label for="textarea">하고싶은 말</label>
+			</td>
+			<td>
+				<textarea style="width: 171px;" rows="5" cols="20" name="textarea" id="textarea" placeholder="입력하세요"></textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td>
+				<button>제출</button>
+				<button type="reset">취소</button>
+			</td>
+		</tr>
+		
+	</table>
+	
+</fieldset>
+
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
